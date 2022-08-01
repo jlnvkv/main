@@ -186,83 +186,83 @@ alert(`Ваша надбавка состовляет ${allowance * expirience} 
 
 //9 задание
 
-const day = prompt('Введите порядковый номер дня недели.')
+const day = +prompt('Введите порядковый номер дня недели.')
 
-if(day === '1'){
+if(day === 1){
    console.log('Понедельник')
-} else if(day ==='2'){
+} else if(day === 2){
    console.log('Вторник')
-} else if(day ==='3'){
+} else if(day === 3){
    console.log('Среда')
-}else if(day ==='4'){
+}else if(day === 4){
    console.log('Четверг')
-}else if(day ==='5'){
+}else if(day === 5){
    console.log('Пятница')
-}else if(day ==='6'){
+}else if(day === 6){
    console.log('Суббота')
-}else if(day ==='7'){
+}else if(day === 7){
    console.log('Воскресенье')
 } else{
    console.log('Не корректое число')
 }
 
 switch(day){
-   case('1'): {
+   case(1): {
       console.log('Понедельник')
       break;
    }
-   case('2'): {
+   case(2): {
       console.log('Вторник')
       break;
    }
-   case('3'): {
+   case(3): {
       console.log('Среда')
       break;
    }
-   case('4'): {
+   case(4): {
       console.log('Четверг')
       break;
    }
-   case('5'): {
+   case(5): {
       console.log('Пятница')
       break;
    }
-   case('6'): {
+   case(6): {
       console.log('Суббота')
       break;
    }
-   case('7'): {
+   case(7): {
       console.log('Воскресенье')
       break;
    }
    default: console.log('Не корректное число')
 }
 
-day === '1'
+day === 1
 ? console.log('Понедельник')
-: day === '2'
+: day === 2
 ? console.log('Вторник') 
-: day === '3'
+: day === 3
 ? console.log('Среда')
-: day === '4'
+: day === 4
 ?console.log('Четверг')
-:day === '5'
+:day === 5
 ?console.log('Пятница')
-: day === '6'
+: day === 6
 ? console.log('Суббота')
-: day === '7'
+: day === 7
 ?console.log('Воскресенье')
 : console.log('Некорректное значение')
 
 // 10 задание
 
-const someNum = prompt('Введите число')
+const someNum = +prompt('Введите число')
 
 if(someNum > 0){
    alert(1)
 } else if(someNum < 0){
    alert(-1)
-}else if(someNum === '0'){
+}else if(someNum === 0){
    alert(0)
 }else{
    alert('Не коректное число')
@@ -274,14 +274,14 @@ someNum>0
 ?alert(1)
 :someNum < 0
 ?alert(-1)
-:someNum === '0'
+:someNum === 0
 ? alert(0)
 :alert('Не коректное число')
 
 
 //12 задание
 
-const home = prompt('Введите номер квартиры')
+const home = +prompt('Введите номер квартиры')
 
 if(home >=1 && home <= 20){
    alert('Вы живете в 1 подъезде')
@@ -310,19 +310,19 @@ if(browser === 'Edge'){
 
 //14 задание
 
-const randNum = prompt('Введите число между 0 и 3')
+const randNum = +prompt('Введите число между 0 и 3')
 
 switch(randNum){
-   case('0'): {
+   case(0): {
       alert('Вы ввели число 0');
       break;
    }
-   case('1'): {
+   case(1): {
       alert('Вы ввели число 1');
       break
    }
-   case('2'):
-   case('3'): {
+   case(2):
+   case(3): {
       alert('Вы ввели число 2, а может и 3');
       break
    }
