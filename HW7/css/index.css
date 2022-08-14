@@ -1,0 +1,100 @@
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: black;
+}
+
+.header {
+    background: url("../image/background.png") 0 0/100% 100% no-repeat;
+    height: 625px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    border: none;
+    width: 265px;
+    height: 75px;
+    border-radius: 32px;
+    box-shadow: 12px 32px 80px -20px rgba(0, 0, 0, 0.12);
+    background-color: white;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.red-text {
+    color: #750505
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    margin: 0 55px;
+}
+
+.item {
+    position: relative;
+}
+
+.card {
+    color: white;
+    position: relative;
+    z-index: 10;
+    padding: 7px 7px 50px 7px;
+    background-color: #3E3E3E;
+    border-radius: 12px;
+}
+
+.card__image {
+    width: 165px;
+    height: 195px;
+    border-radius: 10px;
+}
+
+.card__name {
+    left: 17px;
+    top: 10px;
+    position: absolute;
+    font-size: 19px;
+    width: 75px;
+}
+
+.card__description {
+    position: absolute;
+    font-size: 17px;
+    left: 17px;
+    bottom: 25px;
+    width: 75px;
+}
+
+.card__button-container {
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 12px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -40px;
+}
+
+.card__button {
+    background: none;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 17px);
+    padding: 5px;
+}
+
+.item:hover .card__button-container {
+    display: flex;
+}
