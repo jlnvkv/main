@@ -7,6 +7,9 @@ class AbstractHuman {
         this.gender = gender;
         this.invalid = invalid;
     }
+    sayHi(){
+        console.log (`Привет, меня зовут ${this.name} `)
+    }
     set setNewName (name) {
         this.name = name;
     }
@@ -24,4 +27,39 @@ class AbstractHuman {
         };
         console.log(information);
     }
+}
+class FrontendDeveloper extends AbstractHuman {
+    constructor ( height , weight , name , date , gender , invalid , carierStart ,previousСompanies){
+        super(height , weight , name , date , gender , invalid);
+
+        this.carierStart = carierStart;
+        this.previousСompanies = previousСompanies;
+    }
+    sayHi(){
+        console.log (`Привет, меня зовут ${this.name}, я Фронтенд разработчик. Работаю с ${this.carierstart} `)
+    }
+    getExpirienceInfo(companyName){
+        const company = this.previousСompanies.find((item) => item.companyName === companyName)
+        return company
+    }
+addCompany(company){
+    this.previousСompanies.push(company)
+}
+
+}
+
+
+
+
+
+
+class Builder extends AbstractHuman {
+    constructor ( height , weight , name , date , gender , invalid , location , tools , speed ){
+        super(height , weight , name , date , gender , invalid);
+
+        this.location = location;
+        this.tools = tools;
+        this.speed = speed;
+    }
+    
 }
